@@ -11,11 +11,11 @@ func main() {
 	router := gin.Default()
 
 	router.GET("/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"message": "pong"})
+		c.JSON(http.StatusOK, gin.H{"message": "pongD"})
 	})
 
 	router.GET("/api/hello", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"greeting": "Hello from Go + Gin"})
+		c.JSON(http.StatusOK, gin.H{"greeting": "Hello from Go + GinD"})
 	})
 
 	router.GET("/env", func(c *gin.Context) {
@@ -23,5 +23,5 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"DATABASE_URL": dbUrl})
 	})
 
-	router.Run(":9001")
+	router.Run(":8056")
 }
