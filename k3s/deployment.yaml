@@ -25,11 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dhelm-service
+  name: example3-service
 spec:
   type: NodePort
   selector:
-    app: dhelm
+    app: example3
   ports:
     - protocol: TCP
       port: 80
