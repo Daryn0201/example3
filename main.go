@@ -15,7 +15,7 @@ func main() {
 	})
 
 	router.GET("/api/hello", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"greeting": "Hello from Go + GinD"})
+		c.JSON(http.StatusOK, gin.H{"greeting": "Hello from Go + GinD1"})
 	})
 
 	router.GET("/env", func(c *gin.Context) {
